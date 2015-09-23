@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E493EC8A1BB234A5003650AB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E493EC891BB234A5003650AB /* main.cpp */; };
+		E493EC8A1BB234A5003650AB /* right-click-context-menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E493EC891BB234A5003650AB /* right-click-context-menu.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 
 /* Begin PBXFileReference section */
 		E493EC861BB234A5003650AB /* codejam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codejam; sourceTree = BUILT_PRODUCTS_DIR; };
-		E493EC891BB234A5003650AB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E493EC891BB234A5003650AB /* right-click-context-menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "right-click-context-menu.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		E493EC881BB234A5003650AB /* codejam */ = {
 			isa = PBXGroup;
 			children = (
-				E493EC891BB234A5003650AB /* main.cpp */,
+				E493EC891BB234A5003650AB /* right-click-context-menu.cpp */,
 			);
 			path = codejam;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E493EC8A1BB234A5003650AB /* main.cpp in Sources */,
+				E493EC8A1BB234A5003650AB /* right-click-context-menu.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,6 +205,7 @@
 		E493EC8E1BB234A5003650AB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -212,6 +213,7 @@
 		E493EC8F1BB234A5003650AB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -235,6 +237,7 @@
 				E493EC8F1BB234A5003650AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
