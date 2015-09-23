@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E43040DE1BB278830062230F /* trie-tree.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43040DD1BB278830062230F /* trie-tree.cpp */; };
+		E43040E01BB2880D0062230F /* kmp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E43040DF1BB2880D0062230F /* kmp.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		E43040DD1BB278830062230F /* trie-tree.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "trie-tree.cpp"; sourceTree = "<group>"; };
+		E43040DF1BB2880D0062230F /* kmp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = kmp.cpp; sourceTree = "<group>"; };
 		E493EC861BB234A5003650AB /* codejam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codejam; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 		E493EC881BB234A5003650AB /* codejam */ = {
 			isa = PBXGroup;
 			children = (
-				E43040DD1BB278830062230F /* trie-tree.cpp */,
+				E43040DF1BB2880D0062230F /* kmp.cpp */,
 			);
 			path = codejam;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E43040DE1BB278830062230F /* trie-tree.cpp in Sources */,
+				E43040E01BB2880D0062230F /* kmp.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
