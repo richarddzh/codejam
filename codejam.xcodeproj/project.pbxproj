@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4A509B21BB63F0900E0DEC6 /* trie-graph.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4A509B11BB63F0900E0DEC6 /* trie-graph.cpp */; };
+		79DFBF871BB7E5D100B04592 /* highway.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 79DFBF861BB7E5D100B04592 /* highway.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		79DFBF861BB7E5D100B04592 /* highway.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = highway.cpp; sourceTree = "<group>"; };
 		E493EC861BB234A5003650AB /* codejam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codejam; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4A509B11BB63F0900E0DEC6 /* trie-graph.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "trie-graph.cpp"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		E493EC881BB234A5003650AB /* codejam */ = {
 			isa = PBXGroup;
 			children = (
-				E4A509B11BB63F0900E0DEC6 /* trie-graph.cpp */,
+				79DFBF861BB7E5D100B04592 /* highway.cpp */,
 			);
 			path = codejam;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4A509B21BB63F0900E0DEC6 /* trie-graph.cpp in Sources */,
+				79DFBF871BB7E5D100B04592 /* highway.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
