@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		794DFB8E1BB8FA1D0092D3A9 /* longest-tree-path.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 794DFB8D1BB8FA1D0092D3A9 /* longest-tree-path.cpp */; };
+		794DFB901BB93AF40092D3A9 /* digit-triangle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 794DFB8F1BB93AF40092D3A9 /* digit-triangle.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		794DFB8D1BB8FA1D0092D3A9 /* longest-tree-path.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "longest-tree-path.cpp"; sourceTree = "<group>"; };
+		794DFB8F1BB93AF40092D3A9 /* digit-triangle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "digit-triangle.cpp"; sourceTree = "<group>"; };
 		E493EC861BB234A5003650AB /* codejam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codejam; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 		E493EC881BB234A5003650AB /* codejam */ = {
 			isa = PBXGroup;
 			children = (
-				794DFB8D1BB8FA1D0092D3A9 /* longest-tree-path.cpp */,
+				794DFB8F1BB93AF40092D3A9 /* digit-triangle.cpp */,
 			);
 			path = codejam;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				794DFB8E1BB8FA1D0092D3A9 /* longest-tree-path.cpp in Sources */,
+				794DFB901BB93AF40092D3A9 /* digit-triangle.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
