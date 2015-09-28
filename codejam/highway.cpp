@@ -27,16 +27,6 @@ vector<Car> cars;
 vector<int> cidx, yidx;
 double t[MAXN][MAXN];
 
-bool CarOrder(int i, int j)
-{
-  return cars[i].x > cars[j].x;
-}
-
-bool ExitOrder(int i, int j)
-{
-  return cars[i].y < cars[j].y;
-}
-
 int main(int argc, const char * argv[]) {
 #ifdef NOT_USE_STDIO
   ifstream input("/Users/richard/Programming/codejam/data/highway.in");
@@ -53,8 +43,8 @@ int main(int argc, const char * argv[]) {
     cidx.push_back(i);
     yidx.push_back(i);
   }
-  sort(cidx.begin(), cidx.end(), CarOrder);
-  sort(yidx.begin(), yidx.end(), ExitOrder);
+  sort(cidx.begin(), cidx.end(), [](int i, int j){ return cars[i].x > cars[j].x; });
+  sort(yidx.begin(), yidx.end(), [](int i, int j){ return cars[i].y < cars[j].y; });
   for (int i = 0; i < N; i++) {
     int p = cidx[i];
     for (int j = 0; j < N; j++) {
