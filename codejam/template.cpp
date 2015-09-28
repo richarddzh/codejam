@@ -18,8 +18,8 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
 #ifdef NOT_USE_STDIO
-  ifstream input("/Users/zhengdong/Programming/codejam/data/right-click-context-menu.in");
-  ofstream output("/Users/zhengdong/Programming/codejam/data/right-click-context-menu.out");
+  ifstream input("/Users/richard/Programming/codejam/data/demo.in");
+  ofstream output("/Users/richard/Programming/codejam/data/demo.out");
   streambuf *in = cin.rdbuf(input.rdbuf());
   streambuf *out = cout.rdbuf(output.rdbuf());
 #endif
