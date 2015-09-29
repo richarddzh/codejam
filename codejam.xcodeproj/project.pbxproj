@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		794DFB921BB969410092D3A9 /* backpack01.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 794DFB911BB969410092D3A9 /* backpack01.cpp */; };
+		792EC0B41BBA628300BE2105 /* char-remove.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 792EC0B31BBA628300BE2105 /* char-remove.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		794DFB911BB969410092D3A9 /* backpack01.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = backpack01.cpp; sourceTree = "<group>"; };
+		792EC0B31BBA628300BE2105 /* char-remove.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "char-remove.cpp"; sourceTree = "<group>"; };
 		E493EC861BB234A5003650AB /* codejam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codejam; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -57,7 +57,7 @@
 		E493EC881BB234A5003650AB /* codejam */ = {
 			isa = PBXGroup;
 			children = (
-				794DFB911BB969410092D3A9 /* backpack01.cpp */,
+				792EC0B31BBA628300BE2105 /* char-remove.cpp */,
 			);
 			path = codejam;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				794DFB921BB969410092D3A9 /* backpack01.cpp in Sources */,
+				792EC0B41BBA628300BE2105 /* char-remove.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
