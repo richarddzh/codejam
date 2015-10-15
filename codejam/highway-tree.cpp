@@ -11,6 +11,7 @@
 #include <fstream>
 #include <vector>
 #include <map>
+#include <set>
 #include <algorithm>
 
 #define NOT_USE_STDIO
@@ -18,34 +19,33 @@
 
 using namespace std;
 
-struct Data {
-  int repeat;
-  int dist;
+typedef long long int64;
+
+struct Edge {
+  int64 repeat;
+  int64 dist;
 };
 
-struct Node {
-  map<int, Data *> e;
-  int idx;
-  int parent;
-  int nchild;
-};
+map<pair<int, int>, Edge> edges;
+set<int>  adj[MAXN];
+int64 M, N;
 
-Node * t[MAXN];
-
-void GetChild(Node *r)
+Edge & GetEdge(int u, int v)
 {
-  int n = 0;
-  for (auto i = r->e.begin(); i != r->e.end(); i++) {
-    if (i->first == r->parent) continue;
-    t[i->first]->parent = r->idx;
-    GetChild(t[i->first]);
-    n += t[i->first]->nchild + 1;
+  if (u > v) { int h = u; u = v; v = h; }
+  return edges[pair<int, int>(u, v)];
+}
+
+int GetChildNumber(int i, int from)
+{
+  int sum = 1;
+  for (auto p = adj[i].begin(); p != adj[i].end(); p++) {
+    if (*p == from) continue;
+    int s = GetChildNumber(*p, i);
+    GetEdge(i, *p).repeat = (N - s) * s;
+    sum += s;
   }
-  r->nchild = n;
-  if (r->parent != -1) {
-    r->e[r->parent]->repeat = n + 1;
-    t[r->parent]->e[r->idx]->repeat = n + 1;
-  }
+  return sum;
 }
 
 int main(int argc, const char * argv[]) {
@@ -55,28 +55,19 @@ int main(int argc, const char * argv[]) {
   streambuf *in = cin.rdbuf(input.rdbuf());
   streambuf *out = cout.rdbuf(output.rdbuf());
 #endif
-  int N, M, sum = 0;
+  int64 sum = 0;
   cin >> N >> M;
-  for (int i = 1; i <= N; i++) t[i] = NULL;
+  for (int i = 1; i <= N; i++) adj[i].clear();
   for (int i = 1; i < N; i++) {
     int u, v, k;
     cin >> u >> v >> k;
-    if (u > v) { int h = u; u = v; v = h; }
-    if (t[u] == NULL) t[u] = new Node();
-    if (t[v] == NULL) t[v] = new Node();
-    t[u]->e[v] = new Data();
-    t[v]->e[u] = new Data();
-    t[u]->idx = u;
-    t[v]->idx = v;
-    t[u]->e[v]->dist = k;
-    t[v]->e[u]->dist = k;
+    GetEdge(u, v).dist = k;
+    adj[u].insert(v);
+    adj[v].insert(u);
   }
-  t[1]->parent = -1;
-  GetChild(t[1]);
-  for (int i = 1; i <= N; i++) {
-    for (auto j = t[i]->e.begin(); j != t[i]->e.end(); j++) {
-      if (j->first > i) sum += j->second->repeat * (N - j->second->repeat) * j->second->dist;
-    }
+  GetChildNumber(1, 0);
+  for (auto p = edges.begin(); p != edges.end(); p++) {
+    sum += p->second.dist * p->second.repeat;
   }
   for (int i = 0; i < M; i++) {
     string s;
@@ -86,10 +77,9 @@ int main(int argc, const char * argv[]) {
     } else {
       int u, v, k;
       cin >> u >> v >> k;
-      int old = t[u]->e[v]->dist;
-      t[u]->e[v]->dist = k;
-      t[v]->e[u]->dist = k;
-      sum += (k - old) * t[u]->e[v]->repeat * (N - t[u]->e[v]->repeat);
+      Edge & e = GetEdge(u, v);
+      sum += (k - e.dist) * e.repeat;
+      e.dist = k;
     }
   }
 #ifdef NOT_USE_STDIO
