@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		793E86771BCF630C003AD043 /* t9-spelling.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 793E86761BCF630C003AD043 /* t9-spelling.cpp */; };
+		E4D173801BD23BD500F20993 /* gcampus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4D1737F1BD23BD500F20993 /* gcampus.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		793E86761BCF630C003AD043 /* t9-spelling.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "t9-spelling.cpp"; sourceTree = "<group>"; };
 		E493EC861BB234A5003650AB /* codejam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codejam; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4D1737F1BD23BD500F20993 /* gcampus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gcampus.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		E493EC881BB234A5003650AB /* codejam */ = {
 			isa = PBXGroup;
 			children = (
-				793E86761BCF630C003AD043 /* t9-spelling.cpp */,
+				E4D1737F1BD23BD500F20993 /* gcampus.cpp */,
 			);
 			path = codejam;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				793E86771BCF630C003AD043 /* t9-spelling.cpp in Sources */,
+				E4D173801BD23BD500F20993 /* gcampus.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
