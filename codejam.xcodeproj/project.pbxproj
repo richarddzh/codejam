@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E4D173801BD23BD500F20993 /* gcampus.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E4D1737F1BD23BD500F20993 /* gcampus.cpp */; };
+		E46CEB5B1BD355BA000D1C39 /* travel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E46CEB5A1BD355BA000D1C39 /* travel.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +23,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E46CEB5A1BD355BA000D1C39 /* travel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = travel.cpp; sourceTree = "<group>"; };
 		E493EC861BB234A5003650AB /* codejam */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = codejam; sourceTree = BUILT_PRODUCTS_DIR; };
-		E4D1737F1BD23BD500F20993 /* gcampus.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = gcampus.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +57,7 @@
 		E493EC881BB234A5003650AB /* codejam */ = {
 			isa = PBXGroup;
 			children = (
-				E4D1737F1BD23BD500F20993 /* gcampus.cpp */,
+				E46CEB5A1BD355BA000D1C39 /* travel.cpp */,
 			);
 			path = codejam;
 			sourceTree = "<group>";
@@ -118,7 +118,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E4D173801BD23BD500F20993 /* gcampus.cpp in Sources */,
+				E46CEB5B1BD355BA000D1C39 /* travel.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
